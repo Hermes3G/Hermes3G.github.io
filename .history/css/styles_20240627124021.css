@@ -520,10 +520,6 @@ img {
   height: auto;
 }
 
-.portfolio-list img {
-  border-radius: 15px;
-}
-
 
 .left {
   margin: -15% 0 0 3%;
@@ -711,8 +707,8 @@ section a:hover{
   
   .p-description
   {
+    display: flex;
     flex-direction: column;
-    align-content:center;
     max-width: 60vw;
   }
 
@@ -781,7 +777,6 @@ section a:hover{
 
   .hero{
   display: flex;
-  min-width: 40vw;
   }
   .desktop{
   flex-direction: column;
@@ -944,6 +939,9 @@ section a:hover{
     order: -1;
     }
 
+    .desktop{
+      display: none;
+    }
 
     .mobile{
       display: inline;
