@@ -734,14 +734,39 @@ section a:hover{
   .bot-fold
   {
     display: flex;
+    overflow: hidden;
     flex-wrap: wrap;
     gap: 3vh;
     padding: 6vh 1vw;
     justify-content: space-between;
+    transition: max-height 0.2s ease-out;
   }
 .bot-fold>* {
   flex: 1 1 20vw;
   max-width: 50vw;
+}
+
+.collapsible {
+  background-color: #cccccc;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 2em;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
 
   .column_container
