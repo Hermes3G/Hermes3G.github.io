@@ -33,7 +33,7 @@ ul{
   font-size: 1.25em;
   line-height: 1.25em;
   margin: 0;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   padding-left: 1.5rem;
 }
 
@@ -736,8 +736,8 @@ section a:hover{
     display: flex;
     overflow: hidden;
     flex-wrap: wrap;
-    gap: 3vh;
-    padding: 6vh 1vw;
+    gap: 2vh;
+    padding: 3vh 1vw;
     justify-content: space-between;
     transition: max-height 0.2s ease-out;
   }
@@ -747,28 +747,33 @@ section a:hover{
 }
 
 .collapsible {
-  background-color: #cccccc;
-  color: #444;
-  cursor: pointer;
+  color: #BBBBBB;
+  background-color: rgba(0,0,0,0);
   padding: 18px;
+  cursor: pointer;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 2em;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-style: italic;
 }
 
 .active, .collapsible:hover {
-  background-color: #ccc;
+  color: #888888;
 }
+
+.button  {
+}
+
 
 .content {
   padding: 0 18px;
-  display: none;
+  max-height: 0;
   overflow: hidden;
-  background-color: #f1f1f1;
+  transition: max-height 0.2s ease-out;
 }
-
   .column_container
   {
     display: flex;
