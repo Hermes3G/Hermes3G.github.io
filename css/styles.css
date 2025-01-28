@@ -424,6 +424,12 @@ a.portfolio:hover .body {
     position: relative;
   }
 
+.p-item img
+{
+  border-radius: 3px;
+
+}
+
   .noblur  
   {
     box-shadow: none;
